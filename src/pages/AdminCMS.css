@@ -1,0 +1,99 @@
+.cms-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cms-table-container {
+  border-radius: 16px;
+  background: white;
+  padding: 24px;
+}
+
+.cms-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.cms-table th {
+  padding: 12px 16px;
+  font-weight: 600;
+  color: var(--text-light);
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+  background: #f8fafc;
+}
+
+.cms-table td {
+  padding: 12px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cms-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Matrix table (Revenue entry) */
+.matrix-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.matrix-table {
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.matrix-table th,
+.matrix-table td {
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.matrix-table th:last-child,
+.matrix-table td:last-child {
+  border-right: none;
+}
+
+.sticky-col {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #f8fafc;
+  min-width: 180px;
+  box-shadow: 3px 0 8px rgba(0, 0, 0, 0.06);
+}
+
+.matrix-table tbody .sticky-col {
+  background: white;
+}
+
+.matrix-table tbody tr:hover .sticky-col {
+  background: #f8fafc;
+}
+
+/* Avatar */
+.avatar-sm {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+/* Tab save button highlight */
+.btn.btn-primary.save-btn {
+  padding: 10px 24px;
+  font-size: 15px;
+}
